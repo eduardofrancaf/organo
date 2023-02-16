@@ -1,10 +1,15 @@
 import "./TextInput.css";
 
-const TextInput = ({ label, placeholder, isRequired }) => {
+const TextInput = ({ label, placeholder, isRequired, value, setValue }) => {
   return (
     <div className="text-field">
       <label>{label}</label>
-      <input required={isRequired} placeholder={placeholder} />
+      <input
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        required={isRequired}
+        placeholder={placeholder}
+      />
     </div>
   );
 };
