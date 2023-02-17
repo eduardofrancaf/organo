@@ -5,10 +5,16 @@
 }
 
 .form form {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   max-width: 80%;
   border-radius: 20px;
-  padding: 36px 64px; 
+  padding: 36px 64px;
   box-sizing: border-box;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 445px) {
+  .form form {
+    padding: 12px 24px;
+  }
 }

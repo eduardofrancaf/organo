@@ -17,3 +17,15 @@
   padding: 24px;
   box-sizing: border-box; /* os paddings e margins entram na contagem do tamanho (100%) */
 }
+
+@media (max-width: 445px) {
+  .text-field label {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .text-field input {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
